@@ -2,7 +2,6 @@ import requests
 import ast
 import operator as op
 
-# Supported operators for safe calculator
 SAFE_OPERATORS = {
     ast.Add: op.add,
     ast.Sub: op.sub,
