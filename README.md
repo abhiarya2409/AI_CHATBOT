@@ -31,47 +31,6 @@ Built as part of an AI Developer Technical Assessment.
 - Simple Streamlit chat interface
 - Real-time streaming responses
 
----
-
-## 🧠 Architecture
-
-
-                ┌──────────────┐
-                │   Frontend   │ (Postman / UI)
-                └──────┬───────┘
-                       │
-                ┌──────▼───────┐
-                │   FastAPI    │
-                │  (Backend)   │
-                └──────┬───────┘
-                       │
-      ┌────────────────┼────────────────┐
-      │                │                │
-┌─────▼─────┐   ┌──────▼──────┐   ┌─────▼─────┐
-│  Chat API │   │   RAG Flow  │   │  Agent    │
-└─────┬─────┘   └──────┬──────┘   └─────┬─────┘
-      │                │                │
-      │        ┌───────▼────────┐       │
-      │        │  Vector DB     │       │
-      │        │ (FAISS)        │       │
-      │        └───────┬────────┘       │
-      │                │                │
-      │        ┌───────▼────────┐       │
-      │        │ Gemini Embed   │       │
-      │        └────────────────┘       │
-      │                                 │
-      │                        ┌────────▼────────┐
-      │                        │ Tools           │
-      │                        │ - Web Search    │
-      │                        │ - Calculator    │
-      │                        └─────────────────┘
-      │
-      ▼
-┌───────────────┐
-│ Gemini LLM    │
-└───────────────┘
-
----
 
 ## ⚙️ Tech Stack
 
@@ -103,17 +62,11 @@ ai-chatbot/
 ## 🔐 Environment Variables
 
 Create a `.env` file:
-
-
 GOOGLE_API_KEY=your_api_key_here
-
-
----
 
 ## 📦 Installation
 
-```bash
-git clone <your-repo-url>
+git clone <repo-url>
 cd ai-chatbot
 
 pip install -r requirements.txt
