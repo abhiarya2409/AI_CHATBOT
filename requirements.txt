@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+langchain
+faiss-cpu
+pypdf
+python-dotenv
+google-generativeai
+streamlit
+requests
